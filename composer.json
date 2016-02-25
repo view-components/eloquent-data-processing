@@ -21,10 +21,25 @@
     "require": {
         "view-components/view-components": "*"
     },
+    "require-dev": {
+        "view-components/testing-helpers":"^1.1",
+        "illuminate/database": "*"
+    },
     "autoload": {
         "psr-4": {
             "ViewComponents\\Eloquent\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ViewComponents\\Eloquent\\Test\\Mock\\": "tests/mock/",
+            "ViewComponents\\Eloquent\\Test\\": "tests/phpunit/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "ViewComponents\\Eloquent\\Installer::postComposerInstall"
+        ]
     },
     "support": {
         "email": "mail@vitaliy.in",
