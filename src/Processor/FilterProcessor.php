@@ -3,9 +3,9 @@
 namespace ViewComponents\Eloquent\Processor;
 
 use Illuminate\Database\Eloquent\Builder;
-use Presentation\Framework\Data\Operation\FilterOperation;
-use Presentation\Framework\Data\Operation\OperationInterface;
-use Presentation\Framework\Data\Processor\ProcessorInterface;
+use ViewComponents\ViewComponents\Data\Operation\FilterOperation;
+use ViewComponents\ViewComponents\Data\Operation\OperationInterface;
+use ViewComponents\ViewComponents\Data\Processor\ProcessorInterface;
 
 class FilterProcessor implements ProcessorInterface
 {
