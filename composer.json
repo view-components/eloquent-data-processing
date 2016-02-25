@@ -1,0 +1,35 @@
+{
+    "name": "view-components/eloquent-data-processing",
+    "description": "Eloquent ORM support for ViewComponents",
+    "keywords": [
+        "laravel",
+        "laravel-5",
+        "laravel5",
+        "laravel4",
+        "laravel-4"
+    ],
+    "homepage": "https://github.com/view-components/eloquent-data-processing",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitalii [Nayjest] Stepanenko",
+            "email": "mail@vitaliy.in",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "view-components/view-components": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ViewComponents\\Eloquent\\": "src/"
+        }
+    },
+    "support": {
+        "email": "mail@vitaliy.in",
+        "source": "https://github.com/view-components/eloquent-data-processing",
+        "issues": "https://github.com/view-components/eloquent-data-processing/issues"
+    },
+    "minimum-stability": "dev"
+}
