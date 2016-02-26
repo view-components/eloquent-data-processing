@@ -38,7 +38,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "ViewComponents\\Eloquent\\Installer::postComposerInstall"
+            "ViewComponents\\TestingHelpers\\Installer\\Installer::postComposerInstall"
         ]
     },
     "support": {
