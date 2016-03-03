@@ -39,12 +39,13 @@
     "scripts": {
         "post-install-cmd": [
             "ViewComponents\\TestingHelpers\\Installer\\Installer::postComposerInstall"
-        ]
+        ],
+        "test": "phpunit"
     },
     "support": {
         "email": "mail@vitaliy.in",
         "source": "https://github.com/view-components/eloquent-data-processing",
         "issues": "https://github.com/view-components/eloquent-data-processing/issues"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
