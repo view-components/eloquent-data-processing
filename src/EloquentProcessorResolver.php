@@ -15,9 +15,9 @@ class EloquentProcessorResolver extends ProcessorResolver
     public function __construct()
     {
         $this
-            ->register(SortOperation::class,        SortProcessor::class)
-            ->register(FilterOperation::class,      FilterProcessor::class)
-            ->register(PaginateOperation::class,    PaginateProcessor::class)
+            ->register(SortOperation::class, SortProcessor::class)
+            ->register(FilterOperation::class, FilterProcessor::class)
+            ->register(PaginateOperation::class, PaginateProcessor::class)
         ;
     }
 }
