@@ -1,4 +1,6 @@
 # ViewComponents\EloquentDataProcessing
+[![Build Status](https://travis-ci.org/view-components/eloquent-data-processing.svg?branch=master)](https://travis-ci.org/view-components/eloquent-data-processing)
+
 Eloquent ORM support for ViewComponents
 
 ## Installation
