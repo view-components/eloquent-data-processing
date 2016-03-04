@@ -19,7 +19,8 @@
         }
     ],
     "require": {
-        "view-components/view-components": "*"
+        "view-components/view-components": "*",
+        "php": "^5.5||^7",
     },
     "require-dev": {
         "view-components/testing-helpers":"^1.1",
