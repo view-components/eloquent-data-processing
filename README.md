@@ -1,4 +1,6 @@
-# ViewComponents\EloquentDataProcessing
+ ![Logo](https://raw.githubusercontent.com/view-components/logo/master/view-components-logo-without-text-42.png) ViewComponents\EloquentDataProcessing
+=====
+
 [![Release](https://img.shields.io/packagist/v/view-components/eloquent-data-processing.svg)](https://packagist.org/packages/view-components/eloquent-data-processing)
 [![Build Status](https://travis-ci.org/view-components/eloquent-data-processing.svg?branch=master)](https://travis-ci.org/view-components/eloquent-data-processing)
 
