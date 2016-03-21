@@ -23,7 +23,7 @@
         "php": "^5.5||^7"
     },
     "require-dev": {
-        "view-components/testing-helpers":"^1.1",
+        "view-components/testing-helpers":"^1.6",
         "illuminate/database": "*",
         "squizlabs/php_codesniffer": "~2.3"
     },
@@ -39,10 +39,11 @@
         }
     },
     "scripts": {
-        "post-install-cmd": [
+        "post-create-project-cmd": [
             "ViewComponents\\TestingHelpers\\Installer\\Installer::postComposerInstall"
         ],
-        "test": "phpunit"
+        "test": "php vendor/phpunit/phpunit/phpunit",
+        "cs": "php vendor/squizlabs/php_codesniffer/scripts/phpcs --standard=psr2 src/"
     },
     "support": {
         "email": "mail@vitaliy.in",
