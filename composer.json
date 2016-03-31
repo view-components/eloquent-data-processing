@@ -23,7 +23,7 @@
         "php": "^5.5||^7"
     },
     "require-dev": {
-        "view-components/testing-helpers":"^1.6",
+        "view-components/testing-helpers":"^1.10",
         "illuminate/database": "*",
         "squizlabs/php_codesniffer": "~2.3"
     },
