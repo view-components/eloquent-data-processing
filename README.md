@@ -4,6 +4,7 @@
 [![Release](https://img.shields.io/packagist/v/view-components/eloquent-data-processing.svg)](https://packagist.org/packages/view-components/eloquent-data-processing)
 [![Build Status](https://travis-ci.org/view-components/eloquent-data-processing.svg?branch=master)](https://travis-ci.org/view-components/eloquent-data-processing)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/view-components/eloquent-data-processing/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/view-components/eloquent-data-processing/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/view-components/eloquent-data-processing/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/view-components/eloquent-data-processing/?branch=master)
 
 Eloquent ORM support for ViewComponents
 
