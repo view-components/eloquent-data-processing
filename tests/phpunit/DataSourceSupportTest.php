@@ -52,6 +52,7 @@ class DataSourceSupportTest extends PHPUnit_Framework_TestCase
             DB
                 ::table('test_users')
                 ->where('name', '=', 'David')
+                ->orderBy('id')
         );
         self::assertEquals(
             1,
