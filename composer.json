@@ -23,9 +23,8 @@
         "php": "^5.5||^7"
     },
     "require-dev": {
-        "view-components/testing-helpers":"^1.10",
-        "illuminate/database": "*",
-        "squizlabs/php_codesniffer": "~2.3"
+        "view-components/testing-helpers":"^2.0.1",
+        "illuminate/database": "*"
     },
     "autoload": {
         "psr-4": {
@@ -40,7 +39,13 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "ViewComponents\\TestingHelpers\\Installer\\Installer::postComposerInstall"
+            "ViewComponents\\TestingHelpers\\Installer\\Installer::runFromComposer"
+        ],
+        "post-update-cmd": [
+            "ViewComponents\\TestingHelpers\\Installer\\Installer::runFromComposer"
+        ],
+        "post-install-cmd": [
+            "ViewComponents\\TestingHelpers\\Installer\\Installer::runFromComposer"
         ],
         "test": "php vendor/phpunit/phpunit/phpunit",
         "cs": "php vendor/squizlabs/php_codesniffer/scripts/phpcs --standard=psr2 src/"
