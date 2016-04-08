@@ -19,15 +19,19 @@ class FilterProcessor implements ProcessorInterface
         $value = $operation->getValue();
         $operator = $operation->getOperator();
         $field = $operation->getField();
-        if($operator == FilterOperation::STR_STARTS_WITH){
-            $operator = FilterOperation::OPERATOR_LIKE;
-            $value  = $value."%";
-        }else if($operator == FilterOperation::STR_ENDS_WITH){
-            $operator = FilterOperation::OPERATOR_LIKE;
-            $value  = "%".$value;
-        }else if($operator == FilterOperation::STR_CONTAINS){
-            $operator = FilterOperation::OPERATOR_LIKE;
-            $value  = "%".$value."%";
+        switch ($operator) {
+            case FilterOperation::OPERATOR_STR_STARTS_WITH:
+                $operator = FilterOperation::OPERATOR_LIKE;
+                $value .= '%';
+                break;
+            case FilterOperation::OPERATOR_STR_ENDS_WITH:
+                $operator = FilterOperation::OPERATOR_LIKE;
+                $value = '%' . $value;
+                break;
+            case FilterOperation::OPERATOR_STR_CONTAINS:
+                $operator = FilterOperation::OPERATOR_LIKE;
+                $value = '%' . $value . '%';
+                break;
         }
         $src->where($field, $operator, $value);
         return $src;
