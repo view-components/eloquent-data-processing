@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "view-components/view-components": "^0.24.2||^0.25",
+        "view-components/view-components": "^0.24.2||^0.25||^0.26.6",
         "php": "^5.5||^7"
     },
     "require-dev": {
