@@ -32,6 +32,16 @@ class FilterProcessor implements ProcessorInterface
                 $operator = FilterOperation::OPERATOR_LIKE;
                 $value = '%' . $value . '%';
                 break;
+            case FilterOperation::OPERATOR_SET_CONTAINS:
+                $values = is_array($value)
+                    ? $value
+                    : array_map(function($value){
+                        return trim($value);
+                    }, preg_split('/[\n\t\,\|\s]+/', trim($value))
+                );
+
+                $src->whereIn($field, $values);
+                return $src;
         }
         $src->where($field, $operator, $value);
         return $src;
